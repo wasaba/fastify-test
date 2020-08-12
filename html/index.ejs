@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <p>bienvenue <%= name %> sur la page globale du site !</p>
+      <% if (!email) { %>
+      <a href="inscription">inscription</a>
+      <a href="connexion">connexion</a>
+      <% } %> <% if(email){ %>
+      <p>email: <%= email %></p>
+      <a href="disconnect">se déconnecter</a>
+      <% } %>
+   </body>
+</html>

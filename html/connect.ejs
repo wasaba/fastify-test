@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <form method="post">
+         <label for="name">pseudo</label>
+         <input type="text" name="name" id="name" />
+         <label for="mdp">mot de passe</label>
+         <input type="password" name="mdp" id="mdp" />
+         <label for="email">email</label>
+         <input type="text" name="email" id="email" />
+         <button type="submit">s'inscrire</button>
+      </form>
+      <% if(error){ %>
+      <p><%= error %></p>
+      <% } %>
+   </body>
+</html>
